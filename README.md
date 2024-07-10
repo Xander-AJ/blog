@@ -7,6 +7,9 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+
+
+
 # KnowledgeHub
 
 KnowledgeHub is an innovative and interactive platform designed to facilitate knowledge sharing through articles, comments, and user interactions. It aims to create a vibrant community where users can learn from each other by sharing insights, experiences, and expertise. The platform empowers users to create and share articles on various topics, engage in meaningful discussions through comments, and follow their favorite authors to stay updated with their latest posts.
@@ -26,13 +29,10 @@ KnowledgeHub is an innovative and interactive platform designed to facilitate kn
 ## Project Overview
 
 ### Problem Statement
-
 In today's information-rich world, individuals often struggle to find reliable and insightful content on specific topics. Traditional blogs and information-sharing platforms lack the interactive elements that foster community and engagement. There is a need for a platform that not only provides high-quality content but also encourages user participation and collaboration.
 
 ### Solution
-
 KnowledgeHub addresses these challenges by offering a user-friendly platform where individuals can:
-
 - Create and share articles.
 - Engage through comments.
 - Follow authors and receive notifications about new articles.
@@ -79,14 +79,12 @@ KnowledgeHub addresses these challenges by offering a user-friendly platform whe
 ## Features
 
 ### MVP (Minimum Viable Product)
-
 - User authentication: sign-up and login.
 - Article management: create, view, update, delete articles.
 - Comment system: add, view, delete comments on articles.
 - User following: follow/unfollow other users, view a list of followed users.
 
 ### Stretch Features
-
 - Notifications: receive notifications via Email/SMS when followed users post new articles.
 - Likes: like articles and comments.
 - Search: search articles by title or content.
@@ -96,69 +94,57 @@ KnowledgeHub addresses these challenges by offering a user-friendly platform whe
 ## Technology Stack
 
 ### Frontend
-
 - React
 - React Router
 - Formik for forms and validation
 - CSS for styling
 
 ### Backend
-
 - Flask
 - SQLAlchemy for ORM
 - RESTful API
 
 ### Database
-
 - PostgreSQL
 
 ### Notifications
-
 - Email and SMS integration
 
 ### Deployment
-
 - Render or Heroku
 
 ## Installation
 
 ### Prerequisites
-
 - Node.js and npm
 - Python 3.x
 - PostgreSQL
 
 ### Backend Setup
-
 1. Clone the repository:
-
     ```sh
     git clone https://github.com/yourusername/knowledgehub.git
     cd knowledgehub
     ```
 
 2. Set up a virtual environment:
-
     ```sh
     python -m venv venv
     source venv/bin/activate
     ```
 
 3. Install the backend dependencies:
-
     ```sh
     pip install -r requirements.txt
     ```
 
 4. Set up the PostgreSQL database:
-
     ```sh
     psql
     CREATE DATABASE knowledgehub;
     ```
 
 5. Run the Flask application:
-
     ```sh
     export FLASK_APP=run.py
     flask db init
@@ -168,21 +154,17 @@ KnowledgeHub addresses these challenges by offering a user-friendly platform whe
     ```
 
 ### Frontend Setup
-
 1. Navigate to the `client` directory:
-
     ```sh
     cd client
     ```
 
 2. Install the frontend dependencies:
-
     ```sh
     npm install
     ```
 
 3. Start the React development server:
-
     ```sh
     npm start
     ```
@@ -190,13 +172,11 @@ KnowledgeHub addresses these challenges by offering a user-friendly platform whe
 ## Usage
 
 1. Start the backend server:
-
     ```sh
     flask run
     ```
 
 2. Start the frontend development server:
-
     ```sh
     npm start
     ```
@@ -206,14 +186,12 @@ KnowledgeHub addresses these challenges by offering a user-friendly platform whe
 ## API Endpoints
 
 ### User Endpoints
-
 - `GET /users/<user_id>`: Get user details.
 - `POST /users`: Create a new user.
 - `PUT /users/<user_id>`: Update user details.
 - `DELETE /users/<user_id>`: Delete a user.
 
 ### Article Endpoints
-
 - `GET /articles`: Get all articles.
 - `GET /articles/<article_id>`: Get a specific article.
 - `POST /articles`: Create a new article.
@@ -221,7 +199,6 @@ KnowledgeHub addresses these challenges by offering a user-friendly platform whe
 - `DELETE /articles/<article_id>`: Delete an article.
 
 ### Comment Endpoints
-
 - `GET /comments`: Get all comments.
 - `GET /comments/<comment_id>`: Get a specific comment.
 - `POST /comments`: Create a new comment.
@@ -229,7 +206,6 @@ KnowledgeHub addresses these challenges by offering a user-friendly platform whe
 - `DELETE /comments/<comment_id>`: Delete a comment.
 
 ## Team Members
-
 - Nicole Apono
 - Dennis Githaiga
 - Joy Simiyu
