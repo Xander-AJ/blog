@@ -1,0 +1,15 @@
+[packages]
+flask = "*"
+flask-cors = "*"
+flask-migrate = "*"
+flask-sqlalchemy = "*"
+pyjwt = "*"
+flask-bcrypt = "*"
+flask-marshmallow = "*"
+flask-restful = "*"
+flask-jwt-extended = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-cov = "*"
+flask-testing = "*"

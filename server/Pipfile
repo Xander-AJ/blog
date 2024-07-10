@@ -1,7 +1,0 @@
-[packages]
-flask = "*"
-flask-cors = "*"
-flask-migrate = "*"
-flask-sqlalchemy = "*"
-pyjwt = "*"
-
