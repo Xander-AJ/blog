@@ -31,6 +31,27 @@ const SignupForm = () => {
       }}
       onSubmit={handleSubmit}
     >
-      <Form>
-        <div>
-          <label htmlFor
+      {({ isSubmitting }) => (
+        <Form>
+          <div>
+            <label htmlFor="username">Username</label>
+            <Field type="text" name="username" />
+            <ErrorMessage name="username" component="div" />
+          </div>
+          <div>
+            <label htmlFor="password">Password</label>
+            <Field type="password" name="password" />
+            <ErrorMessage name="password" component="div" />
+          </div>
+          <div>
+            <button type="submit" disabled={isSubmitting}>
+              Sign Up
+            </button>
+          </div>
+        </Form>
+      )}
+    </Formik>
+  );
+};
+
+export default SignupForm;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import '../index.css'
 
 function ArticleDetail() {
   const { id } = useParams();

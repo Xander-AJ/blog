@@ -1,7 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import './App.css'; // Import App specific styles
+import 'App.css'; // Import App specific styles
 import ArticleDetail from './pages/ArticleDetail';
 import Articles from './pages/Articles';
 import Home from './pages/Home';
