@@ -1,12 +1,13 @@
+// src/App.jsx
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import BlogDetail from './pages/BlogDetail';
-import Blogs from './pages/Blogs';
+import './App.css'; // Import App specific styles
+import ArticleDetail from './pages/ArticleDetail';
+import Articles from './pages/Articles';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import NotFound from './pages/NotFound';
-import Signup from './pages/Signup';
-import PrivateRoute from './PrivateRoute';
+import Register from './pages/Register';
 
 function App() {
   return (
@@ -15,10 +16,10 @@ function App() {
         {/* Navigation Bar or Header Component */}
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/blogs" component={Blogs} />
-          <Route exact path="/blogs/:id" component={BlogDetail} />
+          <Route exact path="/articles" component={Articles} />
+          <Route exact path="/articles/:id" component={ArticleDetail} />
           <Route exact path="/login" component={Login} />
-          <Route exact path="/signup" component={Signup} />
+          <Route exact path="/register" component={Register} />
           <Route component={NotFound} />
         </Switch>
       </div>
