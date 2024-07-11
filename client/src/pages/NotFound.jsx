@@ -1,11 +1,13 @@
 import React from 'react';
-import '../index.css'
+import '../index.css';
+import { Link } from 'react-router-dom';
 
 function NotFound() {
   return (
-    <div>
-      <h1>404 - Not Found</h1>
-      <p>The page you are looking for does not exist.</p>
+    <div className="notfound-container">
+      <h1>404 - Page Not Found</h1>
+      <p>Sorry, the page you are looking for does not exist.</p>
+      <Link to="/" className="home-link">Go Back Home</Link>
     </div>
   );
 }
