@@ -1,11 +1,22 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import '../index.css';
 
 function Register() {
+  const history = useHistory();
+
+  const handleRegister = (event) => {
+    event.preventDefault();
+    // Perform registration logic here, e.g., API call
+    
+    // Redirect to articles page after successful registration
+    history.push('/articles');
+  };
+
   return (
     <div className="register-container">
       <h1>Create an Account</h1>
-      <form className="register-form">
+      <form className="register-form" onSubmit={handleRegister}>
         <div className="form-group">
           <label htmlFor="username">Username:</label>
           <input type="text" id="username" name="username" required />
